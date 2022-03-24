@@ -1,0 +1,33 @@
+Requerimiento principal: ampliar giro a distribuidora de licores
+
+necesita actualizar sus procedimientos de compra y venta
+
+RNF comprar un servidor dedicado con Oracle 11g Express y antivirus.
+
+persona encargada de adquisiciones pueda buscar un producto por nombre y el sistema entregue todos los proveedores
+y que el sistema le envíe un correo adjuntando la ficha técnica del producto que queremos cotizar.
+
+El supervisor quiere ingresar fecha desde y hasta para saber todas las compras con el total del período
+
+posibilidad de rechazar cotización.
+
+posibilidad para agregar una observación de la razón del rechazo
+
+en caso de que una cotización esté rechazada, no se puede generar una orden de compra.
+
+posibilidad para generar cotizaciones y ordenes de compra de manera independiente (sólo el encargado de adquisiciones puede generar una orden de compra sin cotización)
+
+debe imprimir un listado solo con los productos bajo stock crítico y evaluar si cotiza o no.
+
+posibilidad de hacer una solicitud de compra para que se genere una cotización sin que el producto esté bajo stock crítico, siempre y cuando el motivo sea avisado por mail, teléfono o personalmente.
+
+
+
+
+
+
+
+botillería - Supervisor  - Encargado - Ingeniero -
+
+
+Requerimientos funcionales y no funcionales - > MDCC 3fn -> MER - > Diagrama de Clases -> Casos de Uso -> Carta Gantt
