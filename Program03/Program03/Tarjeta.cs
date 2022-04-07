@@ -8,8 +8,12 @@ namespace Program03
 {
     class Tarjeta
     {
-        public int NumeroTarjeta { get; set; }
+        private Movimiento[] movimientos = new Movimiento[10];
 
+        #region Propiedades
+        public string NumeroTarjeta { get; set; }
+
+        public string Nombre { get; set; }
 
         private int Saldo { get; set; }
 
@@ -19,12 +23,72 @@ namespace Program03
 
         public int Cupo { get; set; }
 
-        public string Disponibilidad { get; set; }
+        public int Disponible {
+            get
+            {
+                return Cupo + Saldo;
+            }
+
+
+                 }
+
+        #endregion
 
         // Métodos
 
-        public string EstadoCuenta { get; set; }
+        #region Metodos
 
-        public string Compra { get; set; }
+        public string EstadoCuenta() {
+
+
+            return "";
+        }
+
+        public void Compra(string descripcion, int monto) {
+            Movimiento m = new Movimiento();
+            m.Tipo = 0;
+            m.Descripcion = descripcion;
+            m.Monto = monto;
+
+            if (monto > 0)
+                m.Monto = monto * -1;
+            agregarMovimiento(m);
+
+        }
+
+        public void Abono(string descripcion, int monto){
+            Movimiento m = new Movimiento();
+            m.Tipo = 1;
+            m.Descripcion = descripcion;
+            m.Monto = monto;
+            agregarMovimiento(m);
+        }
+
+        private void agregarMovimiento(Movimiento m)
+        {
+            for(int x = movimientos.Length - 2; x >= 0; x--)
+            {
+                movimientos[x + 1] = movimientos[x];
+            }
+            movimientos[0] = m;
+
+            obtenerSaldo();
+
+        }
+
+        private void obtenerSaldo()
+        {
+            Saldo = 0;
+
+            for (int x = 0; x < movimientos.Length - 1; x++){
+                if (movimientos[x] != null)
+                {
+                    Saldo += movimientos[x].Monto;
+                }
+            }
+        }
+
+        #endregion
     }
+
 }

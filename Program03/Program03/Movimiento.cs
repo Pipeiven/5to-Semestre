@@ -8,12 +8,14 @@ namespace Program03
 {
     class Movimiento
     {
-        public string Tipo { get; set; }
+        public int Tipo { get; set; }
 
         public int Monto { get; set; }
 
         public string Descripcion { get; set; }
 
         public int NumeroTransaccion { get; set; }
+
+
     }
 }

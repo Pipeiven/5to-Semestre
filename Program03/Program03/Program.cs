@@ -10,6 +10,17 @@ namespace Program03
     {
         static void Main(string[] args)
         {
+            Tarjeta tc = new Tarjeta();
+
+            tc.Cupo = 200000;
+
+            tc.Compra("Casino", -10000);
+            tc.Abono("Efectivo", 100000);
+            tc.Abono("Transferencia", 50000);
+            tc.Compra("Cargo", 4000);
+            
+
+            Console.ReadKey();
         }
     }
 }

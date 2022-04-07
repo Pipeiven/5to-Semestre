@@ -1,0 +1,7 @@
+C:\Users\alumnos09\Downloads\5to-Semestre-main\5to-Semestre-main\Program03\Program03\obj\Debug\Program03.csproj.AssemblyReference.cache
+C:\Users\alumnos09\Downloads\5to-Semestre-main\5to-Semestre-main\Program03\Program03\obj\Debug\Program03.csproj.CoreCompileInputs.cache
+C:\Users\alumnos09\Downloads\5to-Semestre-main\5to-Semestre-main\Program03\Program03\bin\Debug\Program03.exe.config
+C:\Users\alumnos09\Downloads\5to-Semestre-main\5to-Semestre-main\Program03\Program03\bin\Debug\Program03.exe
+C:\Users\alumnos09\Downloads\5to-Semestre-main\5to-Semestre-main\Program03\Program03\bin\Debug\Program03.pdb
+C:\Users\alumnos09\Downloads\5to-Semestre-main\5to-Semestre-main\Program03\Program03\obj\Debug\Program03.exe
+C:\Users\alumnos09\Downloads\5to-Semestre-main\5to-Semestre-main\Program03\Program03\obj\Debug\Program03.pdb
