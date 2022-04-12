@@ -12,6 +12,7 @@ namespace Program03
         {
             Tarjeta tc = new Tarjeta();
 
+            
             tc.Cupo = 200000;
 
             tc.Compra("Casino", -10000);

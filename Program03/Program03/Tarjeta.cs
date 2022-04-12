@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,20 +9,37 @@ namespace Program03
 {
     class Tarjeta
     {
-        private Movimiento[] movimientos = new Movimiento[10];
+        private Tarjeta[] tarjetas = new Tarjeta[1000];
+
+        private Movimiento[] movimientos = new Movimiento[1000];
+
+        Random rnd = new Random();
 
         #region Propiedades
-        public string NumeroTarjeta { get; set; }
+        public string NumeroTarjeta { get;  }
 
-        public string Nombre { get; set; }
+        public string Nombre { get; }
 
+        private int saldo_;
         private int Saldo { get; set; }
 
         public string Vencimiento { get; set; }
 
+        private int codigoTarjeta_;
         public string CodigoTarjeta { get; set; }
 
-        public int Cupo { get; set; }
+        private int cupo_;
+        public int Cupo
+        {
+            get { return cupo_; }
+            set
+            {
+                if (value >= 0)
+                {
+                    cupo_ = value;
+                }
+            }
+        }
 
         public int Disponible {
             get
@@ -32,13 +50,30 @@ namespace Program03
 
                  }
 
+        public Tarjeta() { }
+
+        public Tarjeta (string numeroTarjeta, string nombre, string saldo, string vencimiento, string codigoTarjeta, string cupo)
+        {
+            this.NumeroTarjeta = numeroTarjeta;
+            this.Nombre = nombre;
+            int.TryParse(saldo, out saldo_);
+            this.Vencimiento = vencimiento;
+            int.TryParse()  String.format("[%03d]", rnd.Next(1000));
+            int.TryParse(cupo, out cupo_);
+        }
+
         #endregion
 
         // Métodos
 
         #region Metodos
 
-        public string EstadoCuenta() {
+        public string EstadoCuenta(string numeroTarjeta) {
+            for(int x = tarjetas.Length -1; x>= 0; x--)
+            {
+                if(tarjetas[x].get)
+            }
+
 
 
             return "";
@@ -87,7 +122,7 @@ namespace Program03
                 }
             }
         }
-
+               
         #endregion
     }
 
