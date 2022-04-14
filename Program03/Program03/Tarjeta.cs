@@ -34,7 +34,8 @@ namespace Program03
             get { return cupo_; }
             set
             {
-                if (value >= 0)
+                int disponible = value + Saldo;
+                if (value > 0 && disponible >= 0)
                 {
                     cupo_ = value;
                 }
@@ -52,13 +53,27 @@ namespace Program03
 
         public Tarjeta() { }
 
+        public Tarjeta(string nombre)
+        {
+            Random rnd = new Random();
+
+            Nombre = nombre;
+
+            int num = rnd.Next(1000);
+            NumeroTarjeta = rnd.Next(1000, 9999) + " - " + rnd.Next(1000, 9999)
+                + " - " + rnd.Next(1000, 9999) + " - " + rnd.Next(1000, 9999);
+
+
+        }
+
         public Tarjeta (string numeroTarjeta, string nombre, string saldo, string vencimiento, string codigoTarjeta, string cupo)
         {
             this.NumeroTarjeta = numeroTarjeta;
             this.Nombre = nombre;
             int.TryParse(saldo, out saldo_);
             this.Vencimiento = vencimiento;
-            int.TryParse()  String.format("[%03d]", rnd.Next(1000));
+            this.CodigoTarjeta = codigoTarjeta;
+            //int.TryParse()  String.format("[%03d]", rnd.Next(1000));
             int.TryParse(cupo, out cupo_);
         }
 
@@ -68,20 +83,21 @@ namespace Program03
 
         #region Metodos
 
-        public string EstadoCuenta(string numeroTarjeta) {
+        public string EstadoCuenta() {
+            string detalle = "";
             for(int x = tarjetas.Length -1; x>= 0; x--)
+                if(movimientos[x] != null)
             {
-                if(tarjetas[x].get)
+                detalle += movimientos[x].DetalleCompleto() + "\n";
             }
 
 
 
-            return "";
+            return detalle + "\n\n---------------------\n" + "Disponible = " + Disponible;
         }
 
         public void Compra(string descripcion, int monto) {
-            Movimiento m = new Movimiento();
-            m.Tipo = 0;
+            Movimiento m = new Movimiento(1);
             m.Descripcion = descripcion;
             m.Monto = monto;
 
@@ -92,8 +108,7 @@ namespace Program03
         }
 
         public void Abono(string descripcion, int monto){
-            Movimiento m = new Movimiento();
-            m.Tipo = 1;
+            Movimiento m = new Movimiento(0);
             m.Descripcion = descripcion;
             m.Monto = monto;
             agregarMovimiento(m);

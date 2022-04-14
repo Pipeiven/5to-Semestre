@@ -10,16 +10,20 @@ namespace Program03
     {
         static void Main(string[] args)
         {
-            Tarjeta tc = new Tarjeta();
+            Tarjeta tc = new Tarjeta("Juanito");
 
             
-            tc.Cupo = 200000;
 
             tc.Compra("Casino", -10000);
             tc.Abono("Efectivo", 100000);
             tc.Abono("Transferencia", 50000);
+            tc.Cupo = 400000;
             tc.Compra("Cargo", 4000);
-            
+            tc.Compra("Notebook", 500000);
+            tc.Cupo = 200000;
+
+
+            Console.WriteLine("Estado de Cuenta \n" + tc.EstadoCuenta());
 
             Console.ReadKey();
         }
