@@ -1,0 +1,7 @@
+C:\Users\alumnos09\source\repos\Prueba01\Prueba01\bin\Debug\Prueba01.exe.config
+C:\Users\alumnos09\source\repos\Prueba01\Prueba01\bin\Debug\Prueba01.exe
+C:\Users\alumnos09\source\repos\Prueba01\Prueba01\bin\Debug\Prueba01.pdb
+C:\Users\alumnos09\source\repos\Prueba01\Prueba01\obj\Debug\Prueba01.csproj.AssemblyReference.cache
+C:\Users\alumnos09\source\repos\Prueba01\Prueba01\obj\Debug\Prueba01.csproj.CoreCompileInputs.cache
+C:\Users\alumnos09\source\repos\Prueba01\Prueba01\obj\Debug\Prueba01.exe
+C:\Users\alumnos09\source\repos\Prueba01\Prueba01\obj\Debug\Prueba01.pdb
