@@ -22,23 +22,32 @@ namespace Prueba01
         public void AgregarJugador (Jugador jugador)
         {
             Boolean r = false;
-            for (int x = jugadores.Length - 2; x >= 0; x--)
+            while (!r && jugador.Nombre != "")
             {
-                if (jugador.Registro == jugadores[x].Registro)
+                for (int x = jugadores.Length - 2; x >= 0; x--)
                 {
-                    Console.WriteLine("Ya existe un jugador con el registro asociado.");
+                    if (jugadores[x] != null)
+                    {
+                        if (jugador.Registro == jugadores[x].Registro)
+                        {
+                            Console.WriteLine("Ya existe un jugador con el registro asociado.");
+                            Console.ReadKey();
+                            r = true;
+
+                        }
+                    }
+                }
+                if (r == false)
+                {
+                    for (int x = jugadores.Length - 2; x >= 0; x--)
+                    {
+                        jugadores[x + 1] = jugadores[x];
+                    }
+                    jugadores[0] = jugador;
+                    Console.WriteLine("Se ha ingresado correctamente el jugador.");
+                    Console.ReadKey();
                     r = true;
-                    break;
                 }
-            }
-            if (r == true)
-            {
-                for (int x = jugadores.Length -2; x>= 0; x--)
-                {
-                    jugadores[x + 1] = jugadores[x];
-                }
-                jugadores[0] = jugador;
-                Console.WriteLine("Se ha ingresado correctamente el jugador.");
             }
                     
         }
