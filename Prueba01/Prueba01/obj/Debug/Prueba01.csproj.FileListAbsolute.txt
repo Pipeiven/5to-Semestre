@@ -13,3 +13,10 @@ D:\Git\workspace\5to-Semestre\Prueba01\Prueba01\obj\Debug\Prueba01.csproj.Sugges
 D:\Git\workspace\5to-Semestre\Prueba01\Prueba01\obj\Debug\Prueba01.csproj.CoreCompileInputs.cache
 D:\Git\workspace\5to-Semestre\Prueba01\Prueba01\obj\Debug\Prueba01.exe
 D:\Git\workspace\5to-Semestre\Prueba01\Prueba01\obj\Debug\Prueba01.pdb
+C:\Users\alumnos09\Downloads\5to-Semestre-main\Prueba01\Prueba01\obj\Debug\Prueba01.csproj.AssemblyReference.cache
+C:\Users\alumnos09\Downloads\5to-Semestre-main\Prueba01\Prueba01\obj\Debug\Prueba01.csproj.CoreCompileInputs.cache
+C:\Users\alumnos09\Downloads\5to-Semestre-main\Prueba01\Prueba01\obj\Debug\Prueba01.exe
+C:\Users\alumnos09\Downloads\5to-Semestre-main\Prueba01\Prueba01\obj\Debug\Prueba01.pdb
+C:\Users\alumnos09\Downloads\5to-Semestre-main\Prueba01\Prueba01\bin\Debug\Prueba01.exe.config
+C:\Users\alumnos09\Downloads\5to-Semestre-main\Prueba01\Prueba01\bin\Debug\Prueba01.exe
+C:\Users\alumnos09\Downloads\5to-Semestre-main\Prueba01\Prueba01\bin\Debug\Prueba01.pdb

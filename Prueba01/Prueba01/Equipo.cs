@@ -24,7 +24,7 @@ namespace Prueba01
             Boolean r = false;
             while (!r && jugador.Nombre != "")
             {
-                for (int x = jugadores.Length - 2; x >= 0; x--)
+                for (int x = jugadores.Length - 1; x >= 0; x--)
                 {
                     if (jugadores[x] != null)
                     {
@@ -44,7 +44,7 @@ namespace Prueba01
                         jugadores[x + 1] = jugadores[x];
                     }
                     jugadores[0] = jugador;
-                    Console.WriteLine("Se ha ingresado correctamente el jugador.");
+                    Console.WriteLine("Jugador agregado correctamente.");
                     Console.ReadKey();
                     r = true;
                 }
@@ -54,12 +54,59 @@ namespace Prueba01
 
         public void EliminarJugador (int registro)
         {
+            Jugador el = new Jugador();
+            Boolean r = false;
+            while (!r && registro.ToString() != "")
+            {
+                for (int x = jugadores.Length - 1; x >= 0; x--)
+                {
+                    if (jugadores[x] != null)
+                    {
+                        if (registro == jugadores[x].Registro)
+                        {
+
+                            jugadores[x] = el;
+                            Console.WriteLine("Jugador Eliminado.");
+                            Console.ReadKey();
+                            r = true;
+
+                        }
+                    }
+                }
+
+            }
+
+
 
         }
 
-        public void BuscarJugador (string buscarJugador)
+        public void BuscarJugador(string buscarJugador)
         {
 
+            Boolean r = false;
+            while (!r && buscarJugador != "")
+            {
+                for (int x = jugadores.Length - 1; x >= 0; x--)
+                {
+                    if (jugadores[x] != null)
+                    {
+                        if (buscarJugador == jugadores[x].Nombre)
+                        {
+                            Console.WriteLine("Jugador Encontrado.");
+                            Console.WriteLine(jugadores[x].DatosJugador());
+                            Console.ReadKey();
+                            r = true;
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("Jugador no Encontrado");
+                            r = true;
+                        }
+                    }
+                }
+
+            }
         }
 
         public string MostrarEquipoTitular()
@@ -74,7 +121,31 @@ namespace Prueba01
 
         public void BuscarJugador (int registroJugador)
         {
+            Boolean r = false;
+            while (!r && registroJugador.ToString() != "")
+            {
+                for (int x = jugadores.Length - 2; x >= 0; x--)
+                {
+                    if (jugadores[x] != null)
+                    {
+                        if (registroJugador == jugadores[x].Registro)
+                        {
+                            Console.WriteLine("Jugador Encontrado.");
+                            Console.WriteLine(jugadores[x].DatosJugador());
+                            Console.ReadKey();
+                            r = true;
 
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("Jugador no Encontrado");
+                            r = true;
+                        }
+                    }
+                }
+
+            }
         }
 
         public void CambiarJugador(int titular, int suplente)
