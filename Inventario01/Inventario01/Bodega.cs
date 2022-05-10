@@ -8,6 +8,8 @@ namespace Inventario01
 {
     internal class Bodega
     {
+        public string IdBodega { get;set }
 
+        public string NombreBodega { get; set; }
     }
 }

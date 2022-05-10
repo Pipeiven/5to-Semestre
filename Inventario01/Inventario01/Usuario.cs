@@ -8,7 +8,7 @@ namespace Inventario01
 {
     internal class Usuario
     {
-        public string Nombre { get; set; }
+        public string NombreUsuario { get; set; }
 
         public string Password { get; set; }
 
