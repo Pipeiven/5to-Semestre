@@ -1,0 +1,28 @@
+Requerimientos Tennis
+
+Reserva de 2 canchas
+
+Usuario común y Profesores, administrador de reservas
+
+Horario de reserva de 1 hora, partiendo de 0 a 0
+
+La reserva, cada profesor puede ver que clases de profesores tiene durante el día.
+
+Evitar sobrereserva.
+
+No todas las reservas son para clases de profesores.
+
+Profesor entra con credenciales y sistema muestra sus clases por día.
+
+Sistema muestra canchas y profesores disponibles.
+
+Costo por clase y por reserva.(posibilidad de cambiar precio) (distintas tarifas)
+
+Almacenar reservas de clases para pagos en conjunto.
+
+Pago al momento o a fin de mes.
+
+Disponibilidad de clases.
+
+
+
