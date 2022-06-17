@@ -1,0 +1,7 @@
+C:\Users\alumnos09\source\repos\PruebaInventario\PruebaInventario\bin\Debug\PruebaInventario.exe.config
+C:\Users\alumnos09\source\repos\PruebaInventario\PruebaInventario\bin\Debug\PruebaInventario.exe
+C:\Users\alumnos09\source\repos\PruebaInventario\PruebaInventario\bin\Debug\PruebaInventario.pdb
+C:\Users\alumnos09\source\repos\PruebaInventario\PruebaInventario\obj\Debug\PruebaInventario.csproj.AssemblyReference.cache
+C:\Users\alumnos09\source\repos\PruebaInventario\PruebaInventario\obj\Debug\PruebaInventario.csproj.CoreCompileInputs.cache
+C:\Users\alumnos09\source\repos\PruebaInventario\PruebaInventario\obj\Debug\PruebaInventario.exe
+C:\Users\alumnos09\source\repos\PruebaInventario\PruebaInventario\obj\Debug\PruebaInventario.pdb
