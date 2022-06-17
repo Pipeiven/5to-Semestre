@@ -1,0 +1,33 @@
+planilla de stock
+planilla histórica
+
+
+Ingresa el usuario al sistema
+
+Se le pregunta por el objeto que desea intercambiar
+
+Se revisa en un excel si hay stock del producto requerido, donde se producen 3 escenarios diferentes, 
+
+1.- En caso de haber stock del producto requerido se puede realizar el intercambio
+
+2.-En caso de no haber, se revisa en la planilla historica si es que en algún momento hubo aquel producto,
+       	en caso de existir, se comunica con el dueño histórico de ese producto para gestionar el contacto,
+       en caso de que posea mas copias u otro producto similar.
+
+3.- Si el producto no existe en la planilla histórica, se puede ingresar el producto al sistema, preguntando por
+   3 opciones de intercambio.
+
+Se requiere contar con Menú para el encargado con las siguientes opciones:
+
+1.- Buscador por modelo de producto.
+
+2.- Listado de stock y de histórico.
+
+3.- Consulta con LinkQ con rango de fechas.
+
+
+Requerimientos:
+1.	Debe considerar al menos una asociación de clases 1 -> n.
+2.	Utilizar listas y/o diccionarios.
+3.	Consultas realizadas con Linq.
+4.	Grabar cada objeto y las operaciones realizadas en archivos de texto plano.
