@@ -16,7 +16,7 @@ namespace PruebaInventario
         {
             using (var reader = new StreamReader("C:/Users/felip/OneDrive/Escritorio/Prueba02ProgramaciónAvanzada/PruebaInventario/PruebaInventario/Historico.csv"))
             {
-                int idProd, idPropietario, idInv, invEntrada, invSalida;
+                int idProd, idPropietario, idInv, invEntrada, invSalida, prValor;
                 bool firstLane = false;
                 while (!reader.EndOfStream)
                 {
@@ -27,15 +27,16 @@ namespace PruebaInventario
                     {
 
                         int.TryParse(values[0], out idProd);
-                        int.TryParse(values[6], out idPropietario);
-                        int.TryParse(values[8], out idInv);
-                        int.TryParse(values[10], out invEntrada);
-                        int.TryParse(values[11], out invSalida);
+                        int.TryParse(values[2], out prValor);
+                        int.TryParse(values[7], out idPropietario);
+                        int.TryParse(values[9], out idInv);
+                        int.TryParse(values[11], out invEntrada);
+                        int.TryParse(values[12], out invSalida);
 
 
-                        inventario.Add(new Inventario(idInv, idProd, values[9], invEntrada, invSalida));
-                        propietarios.Add(new Propietario(idPropietario, values[5], values[7]));
-                        productos.Add(new Producto(idProd, values[1], idPropietario, values[2], values[3], values[4]));
+                        inventario.Add(new Inventario(idInv, idProd, values[10], invEntrada, invSalida));
+                        propietarios.Add(new Propietario(idPropietario, values[6], values[8]));
+                        productos.Add(new Producto(idProd, values[1], idPropietario, prValor, values[3], values[4], values[5]));
                     }
                     else
                     {
@@ -69,7 +70,7 @@ namespace PruebaInventario
 
             foreach (Producto p in productos)
             {
-                Console.WriteLine("ID: {0}, Descripción: {1}, Propietario: {2}, Preferencia01: {3}, Preferencia02: {4}, Preferencia03: {5}", p.ProdId, p.ProdDescripcion, p.ProdPropietario, p.Preferencia1, p.Preferencia2, p.Preferencia3);
+                Console.WriteLine("ID: {0}, Descripción: {1}, Propietario: {2}, Valor: {3} pesos, Preferencia01: {4}, Preferencia02: {5}, Preferencia03: {6}", p.ProdId, p.ProdDescripcion, p.ProdPropietario, p.ProdValor, p.Preferencia1, p.Preferencia2, p.Preferencia3);
             }
         }
 

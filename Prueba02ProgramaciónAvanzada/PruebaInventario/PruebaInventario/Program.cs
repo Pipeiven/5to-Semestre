@@ -13,6 +13,14 @@ namespace PruebaInventario
 
             InventarioController.almacenarCSV();
 
+            Console.WriteLine("Ingrese el ID del Movimiento que desea ver");
+
+            bool a = int.TryParse(Console.ReadLine(), out int b);
+
+            InventarioController.mostrarInventario(b);
+
+            Console.ReadLine();
+
             InventarioController.mostrarInventario();
 
             InventarioController.mostrarProductos();
