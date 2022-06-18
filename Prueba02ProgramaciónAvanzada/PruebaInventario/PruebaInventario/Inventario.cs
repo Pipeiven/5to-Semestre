@@ -18,5 +18,14 @@ namespace PruebaInventario
 
         public int InvSalida { get; set; }
 
+        public Inventario (int id, int prod, string fecha, int entrada, int salida) { 
+            InvId = id; 
+            InvProducto = prod; 
+            InvFecha = fecha; 
+            InvEntrada = entrada; 
+            InvSalida = salida; 
+        }
+        
+
     }
 }

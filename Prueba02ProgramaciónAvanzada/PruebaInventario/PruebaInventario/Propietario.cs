@@ -14,5 +14,12 @@ namespace PruebaInventario
         public string PropNombre { get; set; }
 
         public string PropCorreo { get; set; }
+
+        public Propietario (int id, string nombre, string correo)
+        {
+            PropId = id;
+            PropNombre = nombre;
+            PropCorreo = correo;
+        }
     }
 }

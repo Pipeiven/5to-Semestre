@@ -5,3 +5,11 @@ C:\Users\alumnos09\source\repos\PruebaInventario\PruebaInventario\obj\Debug\Prue
 C:\Users\alumnos09\source\repos\PruebaInventario\PruebaInventario\obj\Debug\PruebaInventario.csproj.CoreCompileInputs.cache
 C:\Users\alumnos09\source\repos\PruebaInventario\PruebaInventario\obj\Debug\PruebaInventario.exe
 C:\Users\alumnos09\source\repos\PruebaInventario\PruebaInventario\obj\Debug\PruebaInventario.pdb
+C:\Users\felip\OneDrive\Escritorio\Prueba02ProgramaciónAvanzada\PruebaInventario\PruebaInventario\obj\Debug\PruebaInventario.csproj.AssemblyReference.cache
+C:\Users\felip\OneDrive\Escritorio\Prueba02ProgramaciónAvanzada\PruebaInventario\PruebaInventario\obj\Debug\PruebaInventario.csproj.SuggestedBindingRedirects.cache
+C:\Users\felip\OneDrive\Escritorio\Prueba02ProgramaciónAvanzada\PruebaInventario\PruebaInventario\obj\Debug\PruebaInventario.csproj.CoreCompileInputs.cache
+C:\Users\felip\OneDrive\Escritorio\Prueba02ProgramaciónAvanzada\PruebaInventario\PruebaInventario\obj\Debug\PruebaInventario.exe
+C:\Users\felip\OneDrive\Escritorio\Prueba02ProgramaciónAvanzada\PruebaInventario\PruebaInventario\obj\Debug\PruebaInventario.pdb
+C:\Users\felip\OneDrive\Escritorio\Prueba02ProgramaciónAvanzada\PruebaInventario\PruebaInventario\bin\Debug\PruebaInventario.exe.config
+C:\Users\felip\OneDrive\Escritorio\Prueba02ProgramaciónAvanzada\PruebaInventario\PruebaInventario\bin\Debug\PruebaInventario.exe
+C:\Users\felip\OneDrive\Escritorio\Prueba02ProgramaciónAvanzada\PruebaInventario\PruebaInventario\bin\Debug\PruebaInventario.pdb

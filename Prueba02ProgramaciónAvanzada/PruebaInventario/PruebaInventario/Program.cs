@@ -10,6 +10,16 @@ namespace PruebaInventario
     {
         static void Main(string[] args)
         {
+
+            InventarioController.almacenarCSV();
+
+            InventarioController.mostrarInventario();
+
+            InventarioController.mostrarProductos();
+
+            InventarioController.mostrarPropietarios();
+
+            Console.ReadLine();
         }
     }
 }
